@@ -1,29 +1,15 @@
 /* dynamictemplate.css */
 .dynamictemplate {
-  position: relative;
-
   /* break out to full viewport width */
   width: 100vw;
   margin: 0 calc(50% - 50vw);
-  min-height: 400px;        /* adjust as needed */
   overflow: hidden;
 }
 
-/* make the picture fill the container */
-.dynamictemplate-bg {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: -1;
-  line-height: 0;
-}
-
-.dynamictemplate-bg img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.dynamictemplate-img {
+  display: block;    /* remove inline spacing */
+  width: 100%;       /* fill the block’s width */
+  height: auto;      /* preserve aspect ratio */
+  object-fit: cover; /* just in case—Scene 7 URLs usually embed cropping */
   object-position: center;
 }

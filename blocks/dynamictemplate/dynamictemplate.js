@@ -1,24 +1,19 @@
 // dynamictemplate.js
-import { createOptimizedPicture } from '../../scripts/aem.js';
-
 export default function decorate(block) {
-  // 1. mark the block
   block.classList.add('dynamictemplate');
 
-  // 2. grab the URL from the block's text content
+  // 1. grab the Scene 7 URL from the editor text
   const src = block.textContent.trim();
 
-  // 3. clear out the URL placeholder
+  // 2. clear the placeholder
   block.textContent = '';
 
-  // 4. build an optimized <picture> exactly as before
-  const picture = createOptimizedPicture(src, '', false, [
-    { width: '1200' },
-    { width: '800' },
-    { width: '400' },
-  ]);
-  picture.classList.add('dynamictemplate-bg');
+  // 3. build a plain <img> so it sizes itself responsively
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = ''; // no overlay text needed
+  img.className = 'dynamictemplate-img';
 
-  // 5. append and you’re done
-  block.append(picture);
+  // 4. append into the block
+  block.append(img);
 }
