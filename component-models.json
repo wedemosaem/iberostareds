@@ -214,5 +214,18 @@
         "valueType": "string"
       }
     ]
+  },
+  
+  {
+    "id": "dynamictemplate",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "url",
+        "valueType": "string"
+      }
+    ]
   }
 ]
