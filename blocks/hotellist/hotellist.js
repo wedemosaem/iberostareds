@@ -135,7 +135,7 @@ export default async function decorate(block) {
         infoIcon.className = 'info-icon';
         infoIcon.textContent = 'ℹ︎';
         const p = document.createElement('p');
-        p.textContent = item.footerText || '';
+        p.textContent = 'Enjoy great benefits' || '';
         footer.append(infoIcon, p);
 
         // assemble card
