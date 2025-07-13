@@ -28,6 +28,10 @@ export default function decorate(block) {
       + '&$copy_EN=1'
       + '&$cta_white=1';
     src += src.includes('?') ? `&${extraDe}` : `?${extraDe}`;
+  } else if (path.includes('/es/')) {
+    const extraEs = '$copy_ES=0'
+      + '&$copy_DE=1';
+    src += src.includes('?') ? `&${extraEs}` : `?${extraEs}`;
   }
 
   // 4. render as a responsive <img>
