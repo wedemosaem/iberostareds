@@ -1,0 +1,127 @@
+/* heroib.css */
+.heroib {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 562px;
+    overflow: hidden;
+  }
+  .heroib img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 1366px) {
+    .heroib {
+      height: auto;
+      padding-top: 41.1%; /* 562/1366 ≈ 0.411 */
+    }
+  }
+  .heroib .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    max-width: 800px;
+    z-index: 2;
+  }
+  .heroib .title .subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.9;
+  }
+  .heroib .title h1 {
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    line-height: 1.1;
+  }
+  .heroib .deal-card {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 360px;
+    width: 90%;
+    z-index: 2;
+  }
+  .heroib .deal-card .badge {
+    display: inline-block;
+    background: #c25a00;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  .heroib .deal-card h2 {
+    font-size: 1.75rem;
+    color: #00204a;
+    margin-bottom: 1rem;
+  }
+  .heroib .deal-card .buttons {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .heroib .deal-card .btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  .heroib .deal-card .btn.primary {
+    background: #4cb39d;
+    color: #fff;
+  }
+  .heroib .deal-card .btn.primary:hover {
+    background: #3a8c79;
+  }
+  .heroib .deal-card .btn.secondary {
+    background: #fff;
+    color: #00204a;
+    border: 2px solid #00204a;
+  }
+  .heroib .deal-card .btn.secondary:hover {
+    background: #f0f0f0;
+  }
+  @media (max-width: 768px) {
+    .heroib .title {
+      top: 30%;
+      transform: translate(-50%, -30%);
+    }
+    .heroib .title h1 {
+      font-size: 2rem;
+    }
+    .heroib .title .subtitle {
+      font-size: 0.8rem;
+    }
+    .heroib .deal-card {
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 1rem;
+    }
+    .heroib .deal-card h2 {
+      font-size: 1.5rem;
+    }
+    .heroib .deal-card .buttons {
+      flex-direction: column;
+    }
+    .heroib .deal-card .btn {
+      padding: 0.6rem;
+    }
+  }
+  

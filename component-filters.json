@@ -16,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "dynamictemplate"
+      "dynamictemplate",
+      "heroib"
     ]
   },
   {
@@ -37,8 +38,7 @@
       "text",
       "image",
       "button",
-      "title",
-      "dynamictemplate"
+      "title"
     ]
   }
 ]
