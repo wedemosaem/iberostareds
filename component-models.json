@@ -275,5 +275,18 @@
         "value": ""
       }
     ]
-  }
+  },
+  
+  {
+    "id": "hotellist",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Limit"
+      }
+    ]
+  },
 ]

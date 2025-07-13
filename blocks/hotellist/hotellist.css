@@ -1,0 +1,144 @@
+/* allhotels.css */
+.allhotels .slider-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+  .allhotels .slide {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+  }
+  .allhotels .image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 66.66%; /* 2/3 of width */
+    overflow: hidden;
+  }
+  .allhotels .image-container img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .allhotels .card {
+    padding: 20px;
+  }
+  .allhotels .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    color: #4cb39d;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .allhotels .location {
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .allhotels .subline {
+    font-size: 0.9rem;
+    color: #4cb39d;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .allhotels .tags {
+    margin-bottom: 12px;
+  }
+  .allhotels .tag {
+    display: inline-block;
+    background: rgba(76,179,157,0.1);
+    color: #4cb39d;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    margin-right: 6px;
+  }
+  .allhotels .reviews {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .allhotels .ta-icon {
+    font-size: 1.2rem;
+    margin-right: 6px;
+    color: #4cb39d;
+  }
+  .allhotels .review-circles span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4cb39d;
+    margin-right: 4px;
+  }
+  .allhotels .review-text {
+    font-size: 0.9rem;
+    color: #4cb39d;
+    margin-left: 8px;
+  }
+  .allhotels .actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0;
+  }
+  .allhotels .action {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #4cb39d;
+    cursor: pointer;
+  }
+  .allhotels .action span {
+    margin-left: 6px;
+  }
+  .allhotels .divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 12px 0;
+  }
+  .allhotels .book-btn {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    background: #4cb39d;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .allhotels .price-info {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 6px;
+  }
+  .allhotels .footer {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 20px;
+    font-size: 0.85rem;
+    color: #6C6C6C;
+  }
+  .allhotels .info-icon {
+    font-size: 1.2rem;
+    color: #777;
+    margin-right: 8px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .allhotels .card { padding: 16px; }
+    .allhotels .card-title { font-size: 1.1rem; }
+    .allhotels .location, .allhotels .subline { font-size: 0.8rem; }
+    .allhotels .actions { flex-wrap: wrap; gap: 8px; }
+  }
+  
