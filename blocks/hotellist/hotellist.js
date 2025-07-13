@@ -45,7 +45,7 @@ function checkDomain() {
       const imgContainer = document.createElement('div');
       imgContainer.className = 'image-container';
       const img = document.createElement('img');
-      img.src = item.image?.url || '';
+      img.src = item.thumbnail?.url || '';
       img.alt = item.name;
       imgContainer.append(img);
       slide.append(imgContainer);
