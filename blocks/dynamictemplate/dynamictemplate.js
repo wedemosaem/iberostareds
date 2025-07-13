@@ -34,7 +34,44 @@ export default function decorate(block) {
     src += src.includes('?') ? `&${extraEs}` : `?${extraEs}`;
   }
 
-  // 4. render as a responsive <img>
+  // 4. parse loc & dest from the browser URL
+  const params = new URLSearchParams(window.location.search);
+  const loc = params.get('loc');
+  const dest = params.get('dest');
+  let dto = '';
+
+  if (loc === 'uk') {
+    if (dest === 'andalucia') {
+      dto = '&$dto_val=40%25';
+    } else if (dest === 'baleares') {
+      dto = '&$dto_val=20%25';
+    } else if (dest === 'canarias') {
+      dto = '&$dto_val=30%25';
+    }
+  } else if (loc === 'de') {
+    if (dest === 'andalucia') {
+      dto = '&$dto_val=40%25';
+    } else if (dest === 'baleares') {
+      dto = '&$dto_val=30%25';
+    } else if (dest === 'canarias') {
+      dto = '&$dto_val=30%25';
+    }
+  } else if (loc === 'es') {
+    if (dest === 'andalucia') {
+      dto = '&$dto_val=40%25';
+    } else if (dest === 'baleares') {
+      dto = '&$dto_val=20%25';
+    } else if (dest === 'canarias') {
+      dto = '&$dto_val=20%25';
+    }
+  }
+
+  if (dto) {
+    // src already has '?' from language logic, so just append
+    src += dto;
+  }
+
+  // 5. render as a responsive <img>
   const img = document.createElement('img');
   img.src = src;
   img.alt = '';
