@@ -231,7 +231,7 @@ window.adobeDataLayer.push({
     minXOffset: 0,
     minYOffset: 0,
   },
-  _experienceplatform: {
+  _demosystem4: {
     identification:{
       core:{
         ecid: sessionStorage.getItem("com.adobe.reactor.dataElements.ECID")
