@@ -231,6 +231,13 @@ window.adobeDataLayer.push({
     minXOffset: 0,
     minYOffset: 0,
   },
+  _demosystem4: {
+    identification:{
+      core:{
+        ecid: "36662526972022812694144525040584891102"
+      }
+    }
+  },
   web: {
     webPageDetails:{
       name: document.title,
