@@ -234,7 +234,7 @@ window.adobeDataLayer.push({
   _demosystem4: {
     identification:{
       core:{
-        ecid: "36662526972022812694144525040584891102"
+        ecid: '36662526972022812694144525040584891102'
       }
     }
   },
