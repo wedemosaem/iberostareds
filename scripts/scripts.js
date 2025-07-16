@@ -78,7 +78,7 @@ const martechLoadedPromise = initMartech(
   },
   // The library config
   {
-    launchUrls: ["https://assets.adobedtm.com/59610d662d36/7a8753ffe928/launch-bb5b0290bac8.min.js"],
+    launchUrls: ["https://assets.adobedtm.com/59610d662d36/7a8753ffe928/launch-91b245998a62-development.min.js"],
     personalization: !!getMetadata('target') && isConsentGiven,
   },
 );
