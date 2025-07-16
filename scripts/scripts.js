@@ -28,6 +28,8 @@ const AUDIENCES = {
   // define your custom audiences here as needed
 };
 
+let pageType = 'CMS';
+
 const isConsentGiven = true;
 const martechLoadedPromise = initMartech(
   // The WebSDK config
